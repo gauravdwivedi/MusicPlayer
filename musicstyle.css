@@ -1,0 +1,587 @@
+body{
+  background-color:#0C1027;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  min-width: 300px;
+}
+.section{
+  height: 30%;
+  width: 60%;
+  margin-left:5%;;
+}
+/*-------------------------Responsiveness-----------------------------------*/
+@media screen and (max-width:750px) {
+  .section{
+    margin-top: 30%;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .section >div{
+    margin-top:5%;
+    width: 80%;
+    }
+
+  .release1:nth-child(2n){
+    display: none;
+  }
+  .artist:nth-child(2n){
+    display: none;
+  }
+
+  .latest-eng .flowers:nth-child(2n){
+    display: none;
+  }
+
+  .latest-Hindi{
+    padding-top: 20px;
+  }
+  /* .artist-list div img{
+    height:4rem;
+    width: 4rem;
+  } */
+
+  .categories-list{
+    height: 8rem;
+    width: 100%;
+  }
+
+  .categories{
+    margin-top: 0%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .categories style1{
+    height: 100%;
+    width: 12rem;
+  }
+  .categories style image{
+    height: 100%;
+    width: 100%;
+  } 
+
+  /* .categories .style1:nth-child(2n){
+    display: none;
+  } */
+
+  .search{
+    height: 0px;
+    width: 0px;
+    /* visibility: hidden; */
+  }
+  .playlist{
+    display: none;
+  }
+  .audioplayer img{
+    margin-top: 10%;
+    display: none;
+  }
+
+  .logo{
+    margin-top: 5%;
+  }
+  .box1 .logo img{
+    height: 2rem;
+    width: 100%;
+  }
+  .box1 .myimage img{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .latest-release{
+    height: 30%; 
+    width: 100%;
+  }
+
+.genres div{
+  display: flex;
+  justify-content: space-between;
+}  
+
+}
+
+/*--------------------------------------Nav---------------------------*/
+
+nav{
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+
+.box1{
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+}
+.box1 div{
+  display: inline-block;
+}
+
+.logo{
+  margin-left: 7%;
+  height: 100%;
+  width: 40%;
+}
+.Favourites a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.Favourites{
+
+  position: absolute;
+  margin-top: 3%;
+  color: white;
+  margin-left: 10%;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+}
+
+.box2{
+  height: 100%;
+  width: 50%;
+}
+
+.search{
+  margin-left: 10%;
+}
+
+.search-icon i{
+  position: absolute;
+  display: inline-block;
+  color:white;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  margin-top: 41px;
+}
+
+.voice{
+  position: absolute;
+  display: inline-block;
+  color:white;
+  opacity: 0.5;
+  font-size: 1.3rem;
+  margin-top: 41px;
+  margin-left: 19%;
+}
+
+.bell-icon i{
+position: absolute;
+display: inline-block;
+margin-top: 41px;
+color: white;
+font-size: xx-large;
+margin-left: 450px;
+
+}
+.search input{
+  border-radius: 1.8rem;
+  position: absolute;
+  color: white;
+  opacity: 0.5;
+  padding: 10px;
+  width: 20%;
+  margin-left: -5px;
+  margin-top: 35px;
+  background-color: #12193E;
+}
+
+.myimage{
+  height: 100%;
+  width: 50%;
+  margin-left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.myimage img{
+  margin-top: 30px;
+  border-radius: 50%;
+  height: 50%;
+  width: 25%;
+  margin-left: 50%;
+}
+
+
+
+
+/*-----------------------------------------Genres-------------------------------*/
+.genres{
+  margin-top: 10%;
+}
+.genre-list{
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.musicbox{
+  height: 100%;;
+  width: 50%;
+}
+
+.musicbox img{
+  height: 100%;
+  width: 100%;
+}
+@keyframes changeShape {
+
+  from{
+    transform: rotate(0dg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+
+}
+.musicbox:hover{
+  transform: scale(1.5);
+}
+/*-------------------------------latest release--------------------------*/
+.latest-release{
+  margin-top: 4%;
+  /*border: 2px solid white;*/
+}
+.heading{
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: 0px;
+  color: white;
+}
+.releases{
+  height: 90%;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.release1{
+  height:50%;
+  width:50%;
+
+}
+
+.release1 img{
+  height:90% ;
+  width:30%;
+}
+
+.release1 img:hover{
+  background-image: url();
+}
+.fa-play{
+  color:white;
+}
+.button.play {
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #202020;
+}
+.button.play {
+  box-sizing: border-box;
+  width: 74px;
+  height: 74px;
+  border-width: 37px 0px 37px 74px;
+  border-color: transparent transparent transparent #202020;
+}
+.timestamp{
+  margin-top: 2%;
+  position: absolute;
+    margin-left: 5%;
+    display: inline-block;
+    color: white;
+}
+/* .release1::after{
+  content: "---";
+  position: absolute;
+  color: white;
+  margin-left: 15%;
+} */
+
+.menu{
+  color:white;
+  display: inline-block;
+  position:absolute;
+  margin-left: 15%;
+
+}
+.time{
+  margin-top: 2%;
+  position: absolute;
+    margin-left: 14.5%;
+    display: inline-block;
+    color: white;
+}
+
+/*--------------------------------Artists-------------------*/
+.artist-list{
+  margin-top: 8%;
+}
+.artists{
+  height: 100%;
+  width: 100%;
+  /*border: 1px solid white;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artist{
+  height: 70%;
+  width: 8rem;
+}
+
+.artist:hover{
+  animation: changeShape 1s ease-in-out 1 alternate;
+}
+
+.artist img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.artist a{
+    text-decoration: none;
+}
+.artist-name{
+  text-align: center;
+  color:white;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/*------------------------------------categories--------------------------*/
+
+.categories-list{
+  margin-top: 8%;
+  background-color:#101642;
+  
+}
+
+.categories{
+  position: relative;
+  top: 15%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.style1{
+  height: 100%;
+  width: 10%;
+}
+
+.style1 img{
+  height: 100%;
+  width: 100%;
+}
+.style{
+  height: 100%;
+  width: 12%;
+  margin-left:-2px;
+}
+.style img{
+  height:100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.style-name{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 2%;
+  color: white;
+}
+
+.style1 .style-name{
+  margin-left: 0px;
+}
+
+/*--------------------------------Music type list-------------------*/
+.musictype-list{
+  margin-top: 2%;
+}
+.musictype{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.type{
+  height: 100%;
+  width: 31.5%;
+}
+.type div{
+  color: white;
+  text-align: center;
+  margin-top: -35%;
+  font-size: 1.5rem;
+}
+.type img{
+  height: 100%;
+  width: 100%;
+}
+.type img:hover{
+  transform: scale(1.5);
+}
+
+/*---------------------------------Latest English-----------------------*/
+.latest-english{
+  margin-top: 2%;
+}
+
+.latest-eng{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flowers{
+  height: 100%;
+  width: 15%;
+}
+
+.flowers img{
+  height: 70%;
+  width: 100%;
+}
+.flowers span{
+  font-size: 0.8rem;
+  color: white;
+}
+
+/*-----------------------------------Latest Hindi-----------------------------*/
+.latest-Hindi{
+  margin-top: 4%;
+}
+/*--------------------------------------Player---------------------------------*/
+.players{
+  margin-left: -120px;
+  height: 15%;
+  margin-top: -5%;
+}
+.player{
+  height: 100%;
+  width: 100%;
+}
+.player img{
+  height: 100%;
+  width: 100%;
+}
+
+/*------------------------------------------playlist---------------------------*/
+.playlist{
+  position: absolute;
+  left: 70%;
+  height: 50vh;
+  width: 30%;
+  top:25%;
+}
+
+.heading span{
+  margin-left: 30%;
+}
+.list{
+  padding: 7px;
+  color: cyan;
+  border: 0px;
+  background-color:#0C1027;
+}
+
+.list option{
+  color: black;
+  padding: 4px;
+  background-color: white;
+}
+
+.Songs{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+
+.Queue{
+  height: 4rem;
+  width: 100%;
+}
+.Queue:hover{
+  opacity: 0.5;
+}
+.song1{
+  height: 3rem;
+  width:100%;
+}
+.song1 .det{
+  display: inline-block;
+  margin-left: 3%;
+}
+.song1 .det .name{
+  font-size: 1rem;
+}
+.singer{
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.like{
+  position: absolute;
+  display: inline-block;
+  right: 10%;
+  margin-top: 5%;
+}
+
+.like .far:hover{
+  color: red;
+}
+.song1 img{
+  height: 100%;
+  width: 3rem;
+  border-radius: 10%;
+}
+
+
+/*-------------------------------------------audioplayer-----------------------------------*/
+
+.audioplayer{
+  position: absolute;
+  top:auto;
+  width: 100%;
+}
+
+.audioplayer span img{
+  margin-left: 15px;
+  border-radius: 50%;
+  height:3.5rem;
+  width: 4rem;
+}
+.audioplayer audio{
+  width: 90%;
+  color:lightgrey;
+}
+
+
+
